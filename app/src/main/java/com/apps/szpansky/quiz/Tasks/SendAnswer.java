@@ -14,12 +14,24 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.net.URL;
 
+/**
+ * Class is for retrieve user answer,
+ * its return dialog with information
+ */
 public class SendAnswer extends BasicTask {
 
 
     private final String update_game_url;
     String questionResult;
 
+    /**
+     * Constructor for class
+     * @param siteAddress
+     * @param cookie
+     * @param userId
+     * @param userAnswer
+     * @param fragmentManager
+     */
     protected SendAnswer(String siteAddress, String cookie, String userId, String userAnswer, FragmentManager fragmentManager) {
         update_game_url = siteAddress + "JSON/user/send_answer/?insecure=cool&cookie=" + cookie + "&user_id=" + userId + "&user_answer=" + userAnswer;
         setFragmentManager(fragmentManager);

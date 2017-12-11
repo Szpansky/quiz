@@ -21,6 +21,11 @@ import java.net.URL;
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
 
+/**
+ * That class extend BasicTask and implement doInBackground method
+ * That class gt WeakReference for context in constructor
+ */
+
 public class GetQuestion extends BasicTask {
 
     QuestionData questionData;
@@ -29,6 +34,15 @@ public class GetQuestion extends BasicTask {
     private final WeakReference<Context> context;
 
     private String questionURL;
+
+    /**
+     * Constructor need site main address, userdata object, questionDataObject, fragment reference and context
+     * @param siteAddress
+     * @param userData
+     * @param questionData
+     * @param fragmentManager
+     * @param context
+     */
 
     public GetQuestion(String siteAddress, UserData userData, QuestionData questionData, FragmentManager fragmentManager, Context context) {
         questionURL = siteAddress + "JSON/user/get_question/?insecure=cool&cookie=" + userData.getCookie() + "&user_id=" + userData.getUserId();

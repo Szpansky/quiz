@@ -19,7 +19,9 @@ import com.apps.szpansky.quiz.Tasks.RetrievePassword;
 import com.apps.szpansky.quiz.Tasks.UserLogin;
 import com.apps.szpansky.quiz.Tools.MySharedPreferences;
 
-
+/**
+ * Class show content for login activity, check data that user was imputed
+ */
 public class LoginActivity extends AppCompatActivity {
 
     RetrievePassword mPasswordTask = null;
@@ -151,10 +153,20 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * That function check that imputed email is correct
+     * @param email
+     * @return boolen
+     */
     private boolean isEmailValid(String email) {
         return !(email.contains("\"") || email.contains(" ") || email.contains("?") || email.contains("&"));
     }
 
+    /**
+     * That function check that imputed password is correct
+     * @param password
+     * @return boolean
+     */
     private boolean isPasswordValid(String password) {
         return !(password.contains("\"") || password.contains(" ") || password.contains("?") || password.contains("&"));
     }

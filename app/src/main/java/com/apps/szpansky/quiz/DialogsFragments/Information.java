@@ -14,6 +14,10 @@ import android.widget.TextView;
 import com.apps.szpansky.quiz.R;
 
 
+/**
+ * This class show simple text in dialog that's inserting in argument via newInstance
+ */
+
 public class Information extends DialogFragment {
 
 

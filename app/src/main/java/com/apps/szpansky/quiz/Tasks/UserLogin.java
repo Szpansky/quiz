@@ -21,13 +21,25 @@ import java.net.URL;
 
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
-
+/**
+ * That class attempt to login
+ * after success its send userdata object to new activity
+ */
 public class UserLogin extends BasicTask {
 
     private final String sendLoginURL;
     private UserData userData;
     private final WeakReference<Context> context;
 
+    /**
+     * Constructor for class
+     * @param siteAddress
+     * @param email
+     * @param password
+     * @param userData
+     * @param fragmentManager
+     * @param context
+     */
     public UserLogin(String siteAddress, String email, String password, UserData userData, FragmentManager fragmentManager, Context context) {
         sendLoginURL = siteAddress + "JSON/user/generate_auth_cookie/?insecure=cool&username=" + email + "&password=" + password;
         this.userData = userData;

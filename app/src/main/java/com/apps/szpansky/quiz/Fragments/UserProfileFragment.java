@@ -28,6 +28,11 @@ import com.google.android.gms.ads.reward.RewardedVideoAd;
 import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 
 
+/**
+ * This class is fragment, that's, show user data and implements google api, that's show revardedVideo
+ *
+ */
+
 public class UserProfileFragment extends Fragment implements RewardedVideoAdListener {
 
     private static boolean REWARDED = false;

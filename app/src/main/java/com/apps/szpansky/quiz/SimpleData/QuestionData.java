@@ -3,6 +3,10 @@ package com.apps.szpansky.quiz.SimpleData;
 import java.io.Serializable;
 
 
+/**
+ * This class keep question data
+ */
+
 public class QuestionData implements Serializable {
 
     private String id;

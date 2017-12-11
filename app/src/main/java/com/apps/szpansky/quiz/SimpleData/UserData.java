@@ -2,6 +2,9 @@ package com.apps.szpansky.quiz.SimpleData;
 
 import java.io.Serializable;
 
+/**
+ * This class keep user data
+ */
 
 public class UserData implements Serializable {
     private String cookie;

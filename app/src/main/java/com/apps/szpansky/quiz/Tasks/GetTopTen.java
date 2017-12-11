@@ -15,12 +15,19 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 
-
+/**
+ * That class show The top ten suers, in dialog
+ */
 public class GetTopTen extends BasicTask {
 
     String getTopTenURL;
     ArrayList<UserRank> topTen = new ArrayList<>();
 
+    /**
+     * Constructor for class
+     * @param siteAddress
+     * @param fragmentManager
+     */
     public GetTopTen(String siteAddress, FragmentManager fragmentManager) {
         setFragmentManager(fragmentManager);
         getTopTenURL = siteAddress + "JSON/user/get_top_ten/?insecure=cool";

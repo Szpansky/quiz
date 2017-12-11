@@ -13,6 +13,10 @@ import android.view.ViewGroup;
 import com.apps.szpansky.quiz.R;
 
 
+/**
+ * This class show simple loading dialog
+ */
+
 public class Loading extends DialogFragment {
 
     Activity activity;

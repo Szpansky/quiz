@@ -3,7 +3,9 @@ package com.apps.szpansky.quiz.Tools;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-
+/**
+ * Class for easy control SharedPreferences
+ */
 public class MySharedPreferences {
 
     static public boolean getSaveLoginDataIsSet(Context context){

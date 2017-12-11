@@ -22,7 +22,9 @@ import com.apps.szpansky.quiz.Tasks.GetQuestion;
 import com.apps.szpansky.quiz.Tasks.GetTopTen;
 import com.bumptech.glide.Glide;
 
-
+/**
+ * That class show fragment for user content, implement toolbar and drawer
+ */
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 

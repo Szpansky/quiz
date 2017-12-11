@@ -7,6 +7,12 @@ import android.support.v4.app.FragmentManager;
 import com.apps.szpansky.quiz.DialogsFragments.Information;
 import com.apps.szpansky.quiz.DialogsFragments.Loading;
 
+/**
+ * That class extends AsyncTask, its an abstract task, that include only basic task method
+ *  BasickTask include Loading fragment, that's show when task is doing some work
+ *  that class implements setError method for set an error in information dialog
+ *  and abstract onSuccessExecute() that need to be implement
+ */
 
 public abstract class BasicTask extends AsyncTask<Void, Void, Boolean> {
 

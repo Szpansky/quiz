@@ -14,11 +14,20 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.net.URL;
 
-
+/**
+ * Class is for retrieve user answer,
+ * its return dialog with information
+ */
 public class RetrievePassword extends BasicTask {
 
     private final String sendRetrievePasswordURL;
 
+    /**
+     * Constructor for class
+     * @param siteAddress
+     * @param email
+     * @param fragmentManager
+     */
     public RetrievePassword(String siteAddress, String email, FragmentManager fragmentManager) {
         setFragmentManager(fragmentManager);
         sendRetrievePasswordURL = siteAddress + "JSON/user/retrieve_password/?insecure=cool&user_login=" + email;

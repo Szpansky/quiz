@@ -13,12 +13,20 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.net.URL;
 
-
+/**
+ * That's class for renew user answer, to unblock daily lock
+ */
 public class RenewUserAnswer extends BasicTask {
 
     private final String renewUserAnswerURL;
 
-
+    /**
+     * Constructor for class
+     * @param siteAddress
+     * @param cookie
+     * @param userId
+     * @param fragmentManager
+     */
     public RenewUserAnswer(String siteAddress, String cookie, String userId, FragmentManager fragmentManager) {
         setFragmentManager(fragmentManager);
         renewUserAnswerURL = siteAddress + "JSON/user/set_user_can_answer/?insecure=cool&cookie=" + cookie + "&user_id=" + userId;

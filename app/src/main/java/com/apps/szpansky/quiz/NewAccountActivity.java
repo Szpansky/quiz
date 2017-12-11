@@ -27,7 +27,10 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.net.URL;
 
-
+/**
+ * That class show textviews, check that the data is imputed correctly
+ * after clicking button its start new AsyncTask, that create new account
+ */
 public class NewAccountActivity extends AppCompatActivity implements DialogInterface.OnDismissListener {
 
     private static boolean FINISH = false;
@@ -187,7 +190,9 @@ public class NewAccountActivity extends AppCompatActivity implements DialogInter
     }
     }
 
-
+    /**
+     * Class that connect to serwer and create new acount
+     */
     public class UserCreateAccountTask extends AsyncTask<Void, Void, Boolean> {
 
         private final String mEmail;
